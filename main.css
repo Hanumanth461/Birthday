@@ -110,7 +110,7 @@ div.bg__fire {
   }
 }
 @media (max-width: 767px) {
-  h1 {
+  h1,h2 {
     font-size: 40px;
   }
   #countdown ul li {
