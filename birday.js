@@ -1,3 +1,5 @@
+
+// Countdown timing js for birthday
 (function () {
   const second = 1000,
         minute = second * 60,
@@ -9,7 +11,7 @@
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "07/21/",
+      dayMonth = "07/26/",
       birthday = dayMonth + yyyy;
   
   today = mm + "/" + dd + "/" + yyyy;
@@ -45,13 +47,12 @@
 
   var bits=80; // how many bits
 var speed=45; // how fast - smaller is faster
-var bangs=5; // how many can be launched simultaneously (note that using too many can slow the script down)
+var bangs=5; // how many can be launched simultaneously
 var colours=new Array("#03f", "#f03", "#0e0", "#93f", "#0cf", "#f93", "#f0c"); 
 //                     blue    red     green   purple  cyan    orange  pink
 
 /****************************
-*      Fireworks Effect     *
-*(c)2016 https://codepen.io/HarshHS/ *
+*      Fireworks effects *
 
 ****************************/
 var bangheight=new Array();
@@ -220,10 +221,6 @@ window.addEventListener("resize", resizeCanvas, false);
         
         var canvas, ctx, w, h, particles = [], probability = 0.04,
             xPoint, yPoint;
-        
-        
-        
-        
         
         function onLoad() {
             canvas = document.getElementById("canvas");
