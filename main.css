@@ -117,7 +117,7 @@ div.bg__fire {
     font-size: 30px;
   }
   .container {
-    min-height: 450px;
+    min-height: 10vh;
   }
   .two__col {
     display: block;
