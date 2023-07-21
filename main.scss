@@ -1,0 +1,141 @@
+.headline {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#content {
+  background-image: url(./bg_image.jpeg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#countdown ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  // display: grid;
+  // grid-template-columns: repeat(4,1fr);
+  // grid-gap: 30px;
+  text-align: center;
+  li {
+    font-size: 50px;
+    line-height: 1.2;
+    color: black;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 30px;
+    text-align: center;
+}
+}
+
+.container {
+  background-color: chocolate;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+}
+h1{
+  font-size: 90px;
+
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.two__col {
+  display: flex;
+  flex-wrap: wrap;
+
+  .left_col {
+    flex-basis: 48%;
+    margin-right: 2%;
+  }
+  
+  .right_col {
+    flex-basis: 48%;
+    margin-left: 2%;
+  }
+}
+h2 {
+  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+  -webkit-text-fill-color: transparent;		
+width: 100%;
+text-align: center;
+font-size: 70px;
+text-transform: uppercase;
+animation: Gradient 15s ease infinite;
+-webkit-background-clip: text;
+}
+#content {
+  display: none;
+}
+.wishes_text{
+  position: relative;
+  z-index: 4;
+  background: linear-gradient(to right, rgb(254 172 94), rgb(199 121 208), rgb(75 192 200 / 70%));
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+	background-size: 400% 400%;
+		animation: Gradient 15s ease infinite;
+}
+// fire crckers css
+body{
+  /*   background:black; */
+    // overflow:hidden;
+    margin:0;
+  }
+
+  canvas#canvas {
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+}
+
+div.bg__fire {
+    position:fixed;
+    inset:0;
+}
+
+@keyframes Gradient {
+0% {
+  background-position: 0% 50%
+}
+50% {
+  background-position: 100% 50%
+}
+100% {
+  background-position: 0% 50%
+}
+}
+
+@media (max-width:767px){
+  h1 {
+    font-size: 40px;
+}
+#countdown ul li {
+  font-size: 30px;
+}
+.container {
+min-height: 450px;
+}
+.two__col {
+  display: block;
+  flex-wrap: unset;
+   .left_col {
+    flex-basis: 100%;
+    margin-right: 0%;
+    margin-bottom: 40px;
+  }
+  .right_col{
+    flex-basis: 100%;
+    margin-left: 0%;
+  }
+}
+
+
+}
